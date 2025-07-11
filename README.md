@@ -45,9 +45,9 @@ TFM/
 └── src/                                   # Código modular
     ├── generador.py                       # Generación de pacientes, prioridades y datos
     ├── acciones.py                        # Funciones de cálculo de FO, saturación, etc.
-    ├── metaheuristicas.py                 # Implementación de ACO sin búsquedA LOCAL
-    ├── metaheuristicas_busquedalocal.py   # Implementación de ACO con búsquedA LOCAL
-    ├── visualizaciones.py                 # Grafico de Gantt
+    ├── metaheuristicas.py                 # Implementación de ACO sin búsqueda LOCAL
+    ├── metaheuristicas_busquedalocal.py   # Implementación de ACO con búsqueda LOCAL
+    ├── visualizaciones.py                 # Gererar gráfico de Gantt
     └── __init__.py
 ```
 
@@ -57,20 +57,20 @@ TFM/
 
 1. Instala las dependencias:
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
 2. Ejecuta el script principal:
 
-```bash
+```
 python main.py
 ```
 
 3. El sistema generará:
-   - Una instancia aleatoria de pacientes y recursos
-   - Una solución inicial factible
-   - Una solución optimizada con ACO
+   - Una instancia aleatoria de pacientes y recursos 
+   - Una solución inicial factible a través de una heurística de construcción
+   - Una solución optimizada a través de la adaptación de la metaheurística de colonia de hormigas y una búsqueda local
    - Un Gantt con la programación de actividades o pacientes
 ---
 
@@ -103,7 +103,7 @@ python main.py
 
 Instalación rápida:
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
